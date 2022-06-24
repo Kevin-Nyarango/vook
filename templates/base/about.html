@@ -1,0 +1,149 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<title>{% block head_title %}About Kevin Nyarango {% endblock %}</title> 
+
+<section class="about-section">
+  <section style="margin-bottom: 100px;" class="bg-white container about">
+
+    <h3  class=" text-center" style=" color: rgb(0, 20, 204);">My Story</h3>
+
+    <h3> Born and raised in Nairobi, where I still reside. I am 24 years old, running an ambitious startups, while freelancing as a software developer. I am anticipating to graduate this year (2022) with a BSc in Actuarial Science. </h3>
+    <div class="showcase  block-1">
+
+    <div class="about-paragraph">
+      
+        <img src="{% static 'images/about1.png'%}" alt="">
+        <p>Growing up my curiousity was my superpower, and it is still.... Like many other children in the Ghetto I lived a day at a time. Everyday's experience had nothing to do with ambitions nor passions (but fun, I'm glad it was that way).  I techinically didn't know what my passion was, other than I wanted to be a judge ( for the enormous amount of power they yield, and also be a boss to my dad). Regardless, as time passed I quickly got obsesses with technology.</p> 
+        <p> Tech being synonymous with games to me at the time. I would of course spare every change I had to spend it at popular play stations around the hood. Among the play station games of the late 2000s PES was my favourite, but I enjoyed Mortal Kombact 4 and Road Rash as well.</p>
+      </div> 
+    </div> 
+
+    <h3  class=" text-center my-1" style=" color: rgb(0, 20, 204);">Education and Seeking a Career Path By Experimenting</h3>
+    
+    <div class="showcase  block-2">
+      <div class="about-paragraph ">
+        <p> An honest critic of my career ambitions can only tell of someone who was not sure of what path to take...</p>
+        <img src="{% static 'images/about3.0.png' %}" alt="">
+        <p> After passing my high school exams, the next chapter was getting into college. Since I didn't perform so good in English I couldn't pursue Law and because I was rejected for medicine (Yeap, sometime in high school I had decided I wanted to be doctor), I ended up pursuing Actuarial Science, in Daystar University. After learning it had maths, finance and some programming. </p>
+        <p> While at campus with my superpower (curiousity) and still being unsure of a career path, I spent a lot of time experimenting various career avenues. Significantly on online education platforms, such as Coursera, Udemy, YouTube and LinkedIn Learn. Well, before I realized I was on my way to be a <a href="{% static 'images/about1.png'%}" alt=" Kevin Nyarang'o Fincancial Analytic Cerficicate" target="_blank"> Financial Analytic <i class="fas fa-external-link-alt"></i></a> and got certified as a:</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <ul>
+            <li> 
+              <a href="{% static 'images/about1.png'%}" alt=" Kevin Nyarang'o Fincancial Analytic Cerficicate" target="_blank">  Graphics Designer for the students lead campus newspaper <i class="fas fa-external-link-alt"></i></a>
+            </li>
+            <li> 
+              <a href="{% static 'images/about1.png'%}" alt=" Kevin Nyarang'o Fincancial Analytic Cerficicate" target="_blank">  Digital Marketer <i class="fas fa-external-link-alt"></i></a>
+            </li>
+            <li> Writing and Speech tutor </li>
+          </ul>
+        </div>
+        <p> I also taught a few school workers some basic computer skills, and perhaps more noteable I was a Self-Taught <span style="color: rgb(0, 20, 204);">Fullstack Software Engineer!</span>
+      </p>
+      </div> 
+    </div>  
+    <h3 class=" text-center my-1" style=" color: rgb(0, 20, 204);">Ongoing Career Pursuits and Interests</h3>
+    <div class="showcase grid block-1">
+      <div class="about-paragraph">
+        
+        <img src="{% static 'images/kabout.png' %}" alt="">
+        <p> With interest in Tech, Finance, Enterpreneurship, Education, Politics and History, Bitcoin seemed to incorporate all of them. So when I first heard of blockchain: the technology that powers the ecosystem of cryptocurrencies, I knew I wanted to join in early as a builder. </p>
+
+        <p> As alluded above I am a business owner and a freelancer. I opted for freelancing, hoping that I can have an humble time to create my personal projects and keep on learning with reduced responsibilities. Turns out I was wrong, freelancing has proven to be more challenging and demanding than I assumed. With freelancing you learn things the hard way! Despite, I'm keeping on with it. </p>
+      </p>
+      </div> 
+    </div>  
+    <h3 class=" text-center my-1" style=" color: rgb(0, 20, 204);">Further Education and Ambitions</h3>
+    <div class="showcase grid block-2">
+      <div class="about-paragraph">
+        
+        <img src="{% static 'images/about4.png' %}" alt="">
+        <p > For the first time in my life, I feel certain with what I want to get into in the tech space. While always seeking my next tech gig, I'm keeping my eyes fixed at the prize while appreciating every experience on the path.</p> <p> I hope to further my eductation to a masters degree and beyond, after I launch my blockchain base startup.</p>
+        
+      </div> 
+    </div>  
+    <div class="about-call-to-action-btn flex my-1">
+      <h3 class="text-gradient-background-2 text-center ">Want Me On Board For Your Next Project?</h3>
+      <a href="#modal-link">
+        <input class="btn btn-outline open-modal-2 " type="button" value="Contact Me">
+      </a>
+    </div>
+  </section>
+  
+    <!-- Testimonials Section -->
+    <section  style="border: none; box-shadow: 0 0 10px rgba(245, 222, 179, 0.192); margin-bottom: 50px;"  class=" showcase projects-showcase testimonial-showcase">
+      <h3 class="text-center   ">
+        Some people think I'm <span class="text-gradient-background-1">awesome</span> to work with</h3>        
+      <hr style="background-color: wheat; width: 35%;">
+      <div class="container my-1">
+        <div class="grid  grid-testimonial grid-testimonial-1-2 ">
+          <div class="testimonial-text">
+            <p>"Kevin is the best developer any team or organisation could have. I was amazed by how dedicated, keen and brilliant he was at every stage of the development process. The final product was terrific and spoke volume about his programming skills "</p>
+            <span class="author-name"> <span class="text-gradient-background-1" style="font-size: 14px !important;"> ~Isaac </span>
+          </div>
+          <div class="testimonial-img">
+            <img src="{% static 'images/zac.png' %}"alt="" >
+          </div>
+        </div>
+        <div class="grid grid-testimonial grid-testimonial-2-2">
+          <div class="testimonial-img flex">
+            <img src="{% static 'images/sedellar.png' %}"alt="" >
+          </div>
+          <div class="testimonial-text">
+            <p> "I had an opportunity to work with Kevin and I'd love to say that my team was very fortunate to have an innovator like him.... Kevin is a great team player who consistently brought his all and made sure all the work was well done and before deadlines."</p>
+            <span class="author-name"> <span class="text-gradient-background-1" style="font-size: 14px !important;"> ~Sedellar </span>
+          </div>
+        </div>
+        <div class="grid grid-testimonial grid-testimonial-1-2">
+          <div class="testimonial-text">
+            <p> "Working with Kevin proved to be seamless. The delivery was on timelines and the final product was exemplary. I can say that I was glad to work with such an efficient developer. Highly recommended!"</p>
+            <span class="author-name"> <span class="text-gradient-background-1" style="font-size: 14px !important;"> ~ Catherine</span>
+          </div>
+          <div class="testimonial-img">
+            <img src="{% static 'images/kate.png' %}"alt="" >
+          </div>
+        </div>
+        <div class="grid grid-testimonial grid-testimonial-2-2">
+          <div class=" flex testimonial-img">
+            <img src="{% static 'images/ken.jpg' %}"alt="" >
+          </div>
+          <div class="testimonial-text">
+            <p> "Kevin is a hardworking and reliable partner. He is a classy creator who always goes for the best for his clients. He is ever willing to assist and I am glad to have crossed paths with him."</p>
+            <span class="author-name"> <span class="text-gradient-background-1" style="font-size: 14px !important;"> ~Kenny Andrew </span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+</section>
+
+<section class=" showcase ">
+  <div class="container showcase-form">
+    <h3 class="">Want to work with me? <span class=" text-gradient-background-1 "> <br> I would love to work with you. </span> </h3>
+      <h3> Contact Me </a></h3>
+      {% include 'contact-me.html' %}
+  </div>
+</section>
+
+  <!-- Main Contact Form Section -->
+
+  <section id="modal-link" class="modal">
+    <div class="  main-contact-form">
+      <div class=" modal-header flex">
+        <p>Hi <span> &#128075; </span> <span class=" text-gradient-background-1 available"> I'm available </span> for hire </p>
+        <span class="modal-close-btn"> &times; </span>
+      </div>
+      <div class="container showcase-form">
+          <h3>Get In Touch </h3>
+ 
+          {% include 'contact-me.html' %}
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

@@ -1,0 +1,110 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+<title>{% block head_title %} Projects{% endblock %}</title> 
+
+<section class="project-landing project-archives-landing flex">
+  <h1 class="text-center"> I Go An Extra Mile For My Client's Satisfaction. </h1>
+</section>
+
+<section class=" container container-blogs blogs single-blog">
+    <div class="flex my-4">
+      
+      <div class=" single-services-card project-archive-card">
+        <h2 class=" text-center "> Here Are Some of the Notable Projects That I Have Worked On</h2>
+
+          {% for project in projects %}
+        
+          
+            <div class="grid project-archive-grid-card">
+                <div>
+                <a href="{% url 'base:project' project.slug %}">
+                  <h2  class=" text-center text-gradient-background-2">{{ project.title }}</h2>
+                </a> 
+                <div class="project-archive-image">
+                  <a href="{% url 'base:project' project.slug %}">
+                  <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                  </a>
+                </div>
+                </div>
+                <h6 class="content">{{project.content|truncatewords:35|safe}}<a href="{% url 'base:project' project.slug %}"class="text-gradient-background-2" style="font-size: 18px !important;">Find Out More</a></h6> 
+                
+            </div>
+
+          {% endfor %}
+  <!-- pagination -->
+  
+  <!-- {% include 'pagination.html' with page=projects %} -->
+
+</section>
+
+    <!-- Projects Section -->
+    
+
+
+    <section style="border: none; box-shadow: 0 0 10px rgba(245, 222, 179, 0.192); margin-bottom: 50px;" class="showcase projects-showcase">
+      
+      
+      <h3 class="text-center ">What to <span class="text-gradient-background-1 "> expect </span>when you have me onboard: </h3>
+      <hr>
+      <div class="container flex my-4">
+        <div class="card flex services-card-flex">
+          <h4> Search Engine Optimization</h4>
+          <img src="{% static 'images/SEO.png' %}" alt=" Search Engine Optimization">
+          <p>Amongst millions of websites, you simply can't afford poor search engine ranking. Well, I've got it all to ensure your site is fully optimised.</p>
+        </div>
+        <div class="card flex services-card-flex"> 
+          <h4 style="padding:8px 30px 0 30px;"> Blazing Fast Website </h4>
+          <img src="{% static 'images/web-speed.png' %}" alt="  Website Speed ">
+          <p> Using the best tech stack in the industry, I ensure that your website is super fast. Noone wants to wait! Don't make your users wait, they will leave.</p>
+        </div>
+        <div class="card flex services-card-flex">
+          <h4> Optimized Website Security </h4>
+          <img src="{% static 'images/web-security.png' %}"alt=" Optimized Website Security">
+          <p> There is simply no room for compromise when it come website security. I also don't take chances while developing websites. I can't!</p>
+        </div>
+        <div class="card flex services-card-flex">
+          <h4  style="padding:8px 20px 0 20px;"> Fully Responsive Website</h4>
+          <img src="{% static 'images/Resposiveness.png' %}"alt="  Fully Responsive Website">
+          <p>Regardless, of the crazy dimensions coming up these days.  I make websites responsive. Be it on phones, tablelets or desktops. I've got you, I promise.</p>
+        </div>
+        <div class="card flex services-card-flex">
+          <h4> Breath-taking Web Design</h4>
+          <img src="{% static 'images/web-design.png' %}"alt="  Web Design<">
+          <p>Without compromising on speed or anything, I do make sure the design for your website is standing out. You just have to love it, otherwise I'd cry.</p>
+        </div>
+      </div>
+
+    </section>
+      </div>   
+  
+  </section>
+  </div>
+
+ <!-- Form Section -->
+  <section class=" showcase my-4" style=" padding: 80px 0;">
+    <div class="container showcase-form">
+      <h3 class="">I'm Always Ready For Work <span class=" text-gradient-background-1 "> <br> Get In Touch! </span> </h3>
+      {% include 'contact-me.html'%}
+    </div>
+  </section>
+
+  <!-- Main Contact Form Section -->
+
+  <section id="modal-link" class="modal">
+    <div class="  main-contact-form">
+      <div class=" modal-header flex">
+        <p>Hi <span> &#128075; </span> <span class=" text-gradient-background-1 available"> I'm available </span> for hire </p>
+        <span class="modal-close-btn"> &times; </span>
+      </div>
+      <div class="container showcase-form">
+          <h3>Get In Touch </h3>
+ 
+          {% include 'contact-me.html' %}
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

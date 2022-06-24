@@ -1,0 +1,85 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<title>{% block head_title %}{{project.title}} ~ Kevin Nyarango {% endblock %}</title> 
+  <!-- Project Section -->
+  
+<section class=" container-for-mobile container flex single-project-container ">
+  <div class="project-landing flex">
+    <h2 class="text-center"> {{ project.description }}</h2>
+  </div>
+    {% if project.image %}
+    <div class="project-image ">
+      <img src="{{ project.image.url }}" alt="{{ project.title }}">
+    </div>
+    {% endif %}
+  <div class=" single-services-card">
+    <h2 class=" text-center blog-title"> {{ project.title }}</h2>
+    <div class="project-meta container flex">
+      <div>
+        <h3>Worked On</h3>
+        <h5>{{project.work_scope}}</h5>
+      </div>
+      <div>
+        <h3>Industry</h3>
+        <h5>{{project.industry}}</h5>
+      </div>
+    <div class="visit-website">
+        <h3>Website</h3>
+        <a href="http://{{project.website}}" target="_blank">
+          <h5>Visit Website <i class="fas fa-external-link-alt"></i> </h5>
+        </a>
+      </div>
+    </div>
+    <div class="content-blog">
+
+      {{project.content|safe}}
+
+      <div class="tech_stacks">
+        <h2 class="text-center">Main Tech Stack</h2>
+        <div class="flex" style="flex-wrap: wrap;">
+          {% for tech_stack in project.tech_stacks.all %}
+          <span class=" tech_stack"> {{ tech_stack }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- Form Section -->
+
+  <section class=" showcase ">
+    <div class="container showcase-form">
+      <h3 class="">Want a Better Project? <br> <span class=" text-gradient-background-1 ">I've Gotcha. </span> </h3>
+      <h3>Reach Out!</h3>
+
+      {% include 'contact-me.html' %}
+    </div>
+  </section>
+
+
+
+  <!-- Main Contact Form Section -->
+
+  <section id="modal-link" class="modal">
+    <div class="  main-contact-form">
+      <div class=" modal-header flex">
+        <p>Hi, I'm available for hire :)</p>
+        <span class="modal-close-btn"> &times; </span>
+      </div>
+      <div class="container showcase-form">
+          <h2>Get In Touch </h2>
+
+          {% include 'contact-me.html' %}
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content%}

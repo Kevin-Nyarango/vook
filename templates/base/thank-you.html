@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Thank you card -->
+<div style="height: 65vh;" class=" showcase flex">
+  <div class="card thank-you-card">
+    <div class="thank-you-card-header flex">        
+      <p>
+         <span  class=" text-gradient-background-2 ">  Hello  Again </span><span> &#128075; </span>
+      </p>
+    </div>
+    <hr>
+    <div class="thank-you-card-body grid">
+      
+      <h1>Thank you for reaching out, your request has been received. </h1>
+      <div class="thank-you-card-bord-img">
+        <img src="{% static 'images/thanks.jpg' %}" alt="">
+      </div>
+    </div> 
+    <hr>
+    <div class="flex">
+      <div class="btn"> <a href="{% url 'base:home' %}"> back to homepage </a></div>
+      <div class="btn"> <a href="{% url 'base:project-archive' %}"> visit the projects page </a></div>
+    </div>
+    <h4 class="text-center"> Let's Connect</h4>
+    <div class="thank-you-page-social-media text-center">
+      <a href="#"> <i class="fab fa-twitter"> </i></a>
+      <a href="#"> <i class="fab fa-linkedin"> </i></a>
+      <a href="#"> <i class="fab fa-github"> </i></a>
+      <a href="#"> <i class="fab fa-facebook"> </i></a>
+      <a href="#"> <i class="fab fa-youtube"> </i></a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

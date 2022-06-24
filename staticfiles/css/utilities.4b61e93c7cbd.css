@@ -1,0 +1,200 @@
+/* container */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+/* card */
+
+.card {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 5px;
+  width: 80%;
+}
+
+
+/* btn */
+
+.btn {
+  font-size: larger;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  font-weight: 600;
+  transform: scale(0.95);
+  background-color: var(--primary-color);
+}
+
+
+/* texts */
+
+.text-center {
+  text-align: center;
+}
+
+.black-text {
+  color: #000000;
+}
+
+.text-gradient-background-1 {
+  font-family: monospace !important;
+  font-size: 20px !important;
+  font-weight: 600;
+  background: linear-gradient(90deg, rgb(127, 255, 88) 4.9%, rgb(251, 255, 4) 96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-background-2 {
+  font-family: monospace !important;
+  font-size: 20px !important;
+  font-weight: 600;
+  background: linear-gradient(110.95318369209701deg, rgba(244, 72, 105, 1) 5.911420204978038%, rgba(159, 1, 234, 1) 95.95534407027817%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/* flex */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+/* grid */
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-3 {
+  grid-template-columns: 30% 30% 30%;
+  gap: 5%;
+}
+
+/* margins */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-05 {
+  margin: 0.5rem ;
+}
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+/* animations */
+
+/* fade in */
+
+.fade-in {
+  overflow: hidden;
+}
+
+
+.fade-in {
+  animation: fadeIn 2s ease-in 3s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in-2 {
+  overflow: hidden;
+}
+
+
+.fade-in-2 {
+  animation: fadeIn2 1s ease-in 6s both;
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
