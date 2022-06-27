@@ -16025,3 +16025,6 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [has_next] in <
 [27/Jun/2022 10:16:13] DEBUG [django.db.backends.schema:142] CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); (params None)
 [27/Jun/2022 10:16:14] DEBUG [django.db.backends.schema:142] CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); (params ())
 [27/Jun/2022 10:16:14] DEBUG [django.db.backends.schema:142] CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+[27/Jun/2022 10:27:08] DEBUG [django.utils.autoreload:388] File C:\Users\HP\Desktop\personal_website\kportfolioAnotherCopy\kportfolio\settings.py previous mtime: 1656314050.8152654, current mtime: 1656314828.0153527
+[27/Jun/2022 10:27:08] DEBUG [django.utils.autoreload:362] C:\Users\HP\Desktop\personal_website\kportfolioAnotherCopy\kportfolio\settings.py notified as changed. Signal results: [(<function template_changed at 0x0000021BFE115EE0>, None), (<function translation_file_changed at 0x0000021BFEB568B0>, None)].
+[27/Jun/2022 10:27:08] INFO [django.utils.autoreload:257] C:\Users\HP\Desktop\personal_website\kportfolioAnotherCopy\kportfolio\settings.py changed, reloading.
