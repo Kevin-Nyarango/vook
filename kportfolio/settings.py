@@ -32,7 +32,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1:8000']
+ALLOWED_HOSTS = ['vokesite.herokuapp.com']
 
 
 # Application definition
@@ -95,25 +95,25 @@ DATABASES = {
 
     # mysql database
 
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kportfolio',
-        'USER': 'root',
-        'HOST': 'localhost',
-        'PASSWORD': env('db_password'),
-        'PORT': ''
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'kportfolio',
+    #     'USER': 'root',
+    #     'HOST': 'localhost',
+    #     'PASSWORD': env('db_password'),
+    #     'PORT': ''
+    # }
 
     # Postgress DB 
 
-#    'default':{
-#       'ENGINE':'django.db.backends.postgresql_psycopg2',
-#       'NAME':'d19mtjbbuhkb50',
-#       'USER':'uxfrbqdycuybaj',
-#       'PASSWORD':'d881508eb13b6f106d8bff82c3983cfa0f3550bbdfa3d48f569c8508edb54a64',
-#       'HOST':'ec2-52-3-2-245.compute-1.amazonaws.com',
-#       'PORT':'',
-#    }
+   'default':{
+      'ENGINE':'django.db.backends.postgresql_psycopg2',
+      'NAME':'do4ho5b6lplnn',
+      'USER':'xsqkuqxhossvzz',
+      'PASSWORD':'cdf0085e8ec769499cd10b05b22b58f97017951c79f463a388a516c5d9cb3c51',
+      'HOST':'ec2-23-23-151-191.compute-1.amazonaws.com',
+      'PORT':'5432',
+   }
     
 }
 
